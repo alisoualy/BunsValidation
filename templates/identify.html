@@ -1,0 +1,64 @@
+{%extends "layout.html" %}
+{% block body %}
+    <h2 class="mx-auto text-center mt-3">Choose your Bun <img width="2%" height="5%" src="../static/assets/question.svg" alt=""></h2>
+    <div class="container marketing mt-3 ">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4 card" >
+          <svg class="bd-placeholder-img rounded-circle" width="50" height="70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><div class="card-up"></div> <img class="bun_image" src="../static/assets/Regular2.png" alt="" width="30%"  onclick="relocate('regular')"></svg>
+          <div class="card-body">
+          <h2 class="card-header ">Regular</h2>
+          <br>
+          <p>Round bun, with bright color , no topping ,a sweet  flavour, a soft white and closed texture. The crown and heel of the bun are toasted before use.</p>    
+          <p><a class="btn btn-warning" href="/regular" role="button" >check Bun &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 card ">
+          <svg class="bd-placeholder-img rounded-circle" width="50" height="70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><div class="card-up"></div> <img class="bun_image" style="margin-bottom:15px" src="../static/assets/bigMac.png" alt="" width="30%"  onclick="relocate('BM')"></svg>
+          <div class="card-body">
+          <h2 class="card-header ">Big Mac</h2>
+          <br>
+          <p>Dark brown color Bun and randomly covered with sesame seeds , a sweet bun flavour with a soft white and closed texture. The crown, club and heel of the bun are toasted before use.</p>
+          <p><a class="btn btn-warning" href="/BM" role="button">check Bun &raquo;</a></p></div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 card">
+          <svg class="bd-placeholder-img rounded-circle" width="50" height="70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="True" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><div class="card-up"></div> <img class="bun_image" src="../static/assets/royal.png" alt="" width="30%"  onclick="relocate('royal')"></svg>
+          <div class="card-body">
+          <h2 class="card-header ">Royal</h2>
+          <br>
+          <p>Round bun with medium brown color and uniformly sesame seeds topping, a sweet bun flavour with a soft white and closed texture, The crown and heel of the bun are toasted before use.</p>
+          <p><a class="btn btn-warning" href="/royal" role="button">check Bun &raquo;</a></p></div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+
+  <br>
+  <br>
+
+  
+
+
+
+
+  <script>
+    function relocate(loc)
+    {
+       location.href = `./${loc}`;
+    } 
+  </script>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
